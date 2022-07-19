@@ -1,3 +1,8 @@
-export function Post() {
-  return <h1>Ignite ReactJS</h1>
+export function Post(props) {
+  return (
+    <>
+      <strong>{props.author}</strong>
+      <p>{props.content}</p>
+    </>
+  )
 }

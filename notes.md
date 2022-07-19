@@ -119,3 +119,40 @@ export function App() {
 ```
 
 # Propriedades no ReactJS
+
+São informações que podemos inserir nos componentes. Funcionam de forma semelhante aos atributos do HTML.
+
+```jsx
+// Aplicação:
+import { Post } from './Post'
+
+export function App() {
+  return (
+    <>
+      <Post
+        author="Pedro Nogueira"
+        content="Salve salve rapaziada do Ignite. Começando agora os estudos de React.js. Quero aprender a utilizar TypeScript!"
+      />
+      <Post
+        author="Mayk Brito"
+        content="Galera, vocês precisam conhecer o Explorer!"
+      />
+    </>
+  )
+}
+```
+
+```jsx
+// Componente
+export function Post(props) {
+  return (
+    <>
+      <h3>Ignite ReactJS</h3>
+      <strong>{props.author}</strong>
+      <p>{props.content}</p>
+    </>
+  )
+}
+```
+
+# Estilizando componentes
