@@ -1,6 +1,9 @@
 //Importação do React
 import React from "react";
 
+//Importação de ícones do phosphor icons
+import { PencilSimpleLine } from 'phosphor-react'
+
 //Importação de estilização
 import styles from './Sidebar.module.css'
 //Importação de estilização global
@@ -21,7 +24,9 @@ export function Sidebar () {
         <span>Full-stack Developer</span>
       </div>
       <footer>
-        <a href="#">Editar seu perfil</a>
+        <a href="#">
+          <PencilSimpleLine size={20} />
+          Editar seu perfil</a>
       </footer>
     </aside>
   )
