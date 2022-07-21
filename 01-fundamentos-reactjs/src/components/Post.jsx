@@ -1,8 +1,8 @@
 // Importação de estilização
 import styles from './Post.module.css'
 
-//Importação de icones
-import {Trash, ThumbsUp} from 'phosphor-react'
+//Importação de componentes
+import { CommentList } from './Comment'
 
 export function Post () {
   return (
@@ -37,36 +37,9 @@ export function Post () {
         </footer>
       </form>
 
-      <section className={styles.comments}>
-        <img src="https://github.com/Joao-Pedro-Nogueira.png"/>
-        <div className={styles.wrapper}>
-          <div className={styles.commentArea}>
-            <header>
-              <div className={styles.infos}>
-                <div className={styles.authorId}>
-                  <strong>João Pedro Nogueira</strong>{' '}
-                  <span>(você)</span>
-                </div>
-                <time title='Quinta-feira, 21 de julho de 2022 às 07h52' dateTime='21-07-2022 07:52'>Cerca de 3h</time>
-              </div>
-              <button className={styles.trash}>
-                <Trash size={24}/>
-              </button>
-            </header>
-            <div className={styles.commentContent}>
-              <p>Altíssimas expectativas!! 👏👏</p>
-            </div>
-          </div>
-          {/* <div className={styles.applause}>
-            <ThumbsUp size={20} weight="bold"/>
-            <strong>Aplaudir • 33</strong>
-          </div> */}
-          <button className={styles.applause}>
-            <ThumbsUp size={20} weight="bold"/>
-            <strong>Aplaudir • 33</strong>
-          </button>
-        </div>
-      </section>
+      <CommentList />
+      <CommentList />
+      <CommentList />
     </article>
   )
 }
