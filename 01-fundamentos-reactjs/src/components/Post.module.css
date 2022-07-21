@@ -90,6 +90,7 @@
   margin-top: 1.5rem;
   padding-top: 1.5rem;
   border-top: 2px solid var(--gray-600);
+  margin-bottom: 2.5rem;
 }
 
 .commentForm > strong {
@@ -147,4 +148,114 @@
 
 .commentForm button[type="submit"]:hover {
   background-color: var(--green-300);
+}
+
+/* ----------------------------------------------------------------- Comments */
+.comments {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.comments > img {
+  height: 50px;
+  width: 50px;
+  border-radius: 8px;
+}
+
+.comments .wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.comments .wrapper .commentArea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+
+  background: var(--gray-700);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.comments .wrapper .commentArea > header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comments .wrapper .commentArea > header .infos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.comments .wrapper .commentArea > header .infos .authorId > strong {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  color: var(--gray-100);
+}
+
+.comments .wrapper .commentArea > header .infos .authorId > span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  color: var(--gray-400);
+}
+
+.comments .wrapper .commentArea > header .infos .authorId > time {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  color: var(--gray-400);
+}
+
+.comments .wrapper .commentArea > header .trash {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  color: var(--gray-400);
+  border-radius: 2px;
+}
+
+.comments .wrapper .commentArea .commentContent {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: var(--gray-300);
+}
+
+.comments .wrapper .applause {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.comments .wrapper button {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  color: var(--gray-400);
+  border-radius: 2px;
 }
