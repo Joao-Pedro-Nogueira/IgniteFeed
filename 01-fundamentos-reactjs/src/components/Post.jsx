@@ -13,13 +13,15 @@ export function Post () {
           </div>
         </div>
 
-        <time dateTime='20-07-2022 21:22'>Publicado há 1h</time>
+        <time title='Quinta feira, 20 de julho de 2022 às 21h22' dateTime='20-07-2022 21:22'>Publicado há 1h</time>
       </header>
 
       <div className={styles.content}>
         <p>Ninguém vai entregar mais conteúdo de qualidade em programação do que a Rocketseat </p>em 2022. Podem anotar!
 
         <p>2021 preparamos muito o terreno para tudo o que vai acontecer em 2022, se preparem.</p>
+
+        <p><a href="#">#Rocketseat</a> <a href='#'>#ReactJS</a></p>
       </div>
     </article>
   )

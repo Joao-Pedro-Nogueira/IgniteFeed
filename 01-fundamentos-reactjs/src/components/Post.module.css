@@ -6,22 +6,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
 }
 
-.post header {
+.post + .post {
+  margin-top: 2rem;
+}
+
+.post > header {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.post header .author {
+.post > header .author {
   display: flex;
   gap: 1rem;
 }
 
-.post header .author .avatar {
+.post > header .author .avatar {
   height: 50px;
   width: 50px;
   border-radius: 5px;
@@ -29,12 +32,12 @@
   outline: 2px solid var(--green-500);
 }
 
-.post header .author .authorInfo {
+.post > header .author .authorInfo {
   display: flex;
   flex-direction: column;
 }
 
-.post header .author .authorInfo strong {
+.post > header .author .authorInfo strong {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -43,7 +46,7 @@
   color: var(--gray-100);
 }
 
-.post header .author .authorInfo span {
+.post > header .author .authorInfo span {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -52,11 +55,32 @@
   color: var(--gray-400);
 }
 
-.post header time {
+.post > header > time {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 160%;
   color: var(--gray-400);
+}
+
+.post .content {
+  width: 100%;
+  line-height: 160%;
+  color: var(--gray-300);
+  margin-top: 1.5rem;
+}
+
+.post .content p + p {
+  margin-top: 1rem;
+}
+
+.post .content p a {
+  font-weight: bold;
+  color: var(--green-500);
+  text-decoration: none;
+}
+
+.post .content p a:hover {
+  color: var(--green-300);
 }
