@@ -23,6 +23,11 @@ export function Post () {
 
         <p><a href="#">#Rocketseat</a> <a href='#'>#ReactJS</a></p>
       </div>
+
+      <div className={styles.comment}>
+        <strong>Deixe seu feedback</strong>
+        <textarea placeholder='Escreva seu comentário'></textarea>
+      </div>
     </article>
   )
 }
