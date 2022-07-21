@@ -16,7 +16,7 @@ export function Post () {
           </div>
         </div>
 
-        <time title='Quinta feira, 20 de julho de 2022 às 21h22' dateTime='20-07-2022 21:22'>Publicado há 1h</time>
+        <time title='Quinta feira, 20 de julho de 2022 às 21h22' dateTime='20-07-2022 21:22'>Publicado há 13h</time>
       </header>
 
       <div className={styles.content}>

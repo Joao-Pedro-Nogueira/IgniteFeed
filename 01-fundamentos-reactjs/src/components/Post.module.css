@@ -59,7 +59,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 160%;
   color: var(--gray-400);
 }
@@ -215,11 +215,11 @@
   color: var(--gray-400);
 }
 
-.comments .wrapper .commentArea > header .infos .authorId > time {
+.comments .wrapper .commentArea > header .infos > time {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.875rem;
   line-height: 160%;
   color: var(--gray-400);
 }
