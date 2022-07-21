@@ -1,0 +1,62 @@
+.post {
+  padding: 2.5rem;
+  background: var(--gray-800);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.post header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post header .author {
+  display: flex;
+  gap: 1rem;
+}
+
+.post header .author .avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  border: 2px solid var(--gray-800);
+  outline: 2px solid var(--green-500);
+}
+
+.post header .author .authorInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.post header .author .authorInfo strong {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--gray-100);
+}
+
+.post header .author .authorInfo span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: var(--gray-400);
+}
+
+.post header time {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: var(--gray-400);
+}

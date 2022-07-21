@@ -21,7 +21,7 @@ export function Sidebar () {
         className={styles.avatar}
         src="https://github.com/Joao-Pedro-Nogueira.png" />
         <strong>João Pedro Nogueira</strong>
-        <span>Full-stack Developer</span>
+        <span>Web Developer</span>
       </div>
       <footer>
         <a href="#">
