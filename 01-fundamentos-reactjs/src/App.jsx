@@ -16,14 +16,8 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post 
-            author="Pedro Nogueira" 
-            content="Salve salve rapaziada do Ignite. Começando agora os estudos de React.js. Quero aprender a utilizar TypeScript!"
-          />
-          <Post
-            author="Mayk Brito"
-            content="Galera, vocês precisam conhecer o Explorer!"
-          />
+          <Post />
+          <Post />
         </main>
       </div>
 

@@ -24,10 +24,15 @@ export function Post () {
         <p><a href="#">#Rocketseat</a> <a href='#'>#ReactJS</a></p>
       </div>
 
-      <div className={styles.comment}>
+      <form className={styles.commentForm}>
         <strong>Deixe seu feedback</strong>
-        <textarea placeholder='Escreva seu comentário'></textarea>
-      </div>
+
+        <textarea placeholder='Escreva um comentário'></textarea>
+
+        <footer>
+          <button type='submit'>Publicar</button>
+        </footer>
+      </form>
     </article>
   )
 }
