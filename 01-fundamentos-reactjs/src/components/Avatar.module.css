@@ -4,10 +4,22 @@
   border-radius: 5px;
   border: 2px solid var(--gray-800);
   outline: 2px solid var(--green-500);
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.avatarWithBorder:hover {
+  filter:drop-shadow(0 0 10px var(--green-300));
 }
 
 .avatar {
   border-radius: 5px;
   height: 50px;
   width: 50px;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.avatar:hover {
+  filter:drop-shadow(0 0 10px var(--green-300));
 }

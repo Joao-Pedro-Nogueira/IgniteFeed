@@ -33,7 +33,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 160%;
   color: var(--gray-100);
 }
@@ -42,7 +42,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 160%;
   color: var(--gray-400);
 }
@@ -88,7 +88,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 160%;
   color: var(--gray-100);
 }
@@ -106,7 +106,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 140%;
   padding: 1rem;
   color: var(--white);
@@ -192,7 +192,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 160%;
   color: var(--gray-100);
 }
@@ -201,7 +201,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 160%;
   color: var(--gray-400);
 }
@@ -229,7 +229,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 160%;
   color: var(--gray-300);
 }
