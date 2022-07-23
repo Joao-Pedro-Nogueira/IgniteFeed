@@ -3,13 +3,14 @@ import styles from './Post.module.css'
 
 //Importação de componentes
 import { CommentList } from './Comment'
+import { Avatar } from './Avatar'
 
 export function Post () {
   return (
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img className={styles.avatar} src="http://github.com/diego3g.png" />
+          <Avatar hasBorder={true} src='https://github.com/diego3g.png' />
           <div className={styles.authorInfo}>
             <strong>Diego Fernandes</strong>
             <span >Rocketseat CTO</span>

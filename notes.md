@@ -155,4 +155,9 @@ export function Post(props) {
 }
 ```
 
-# Estilizando componentes
+# Quando criar um componente em ReactJS?
+
+1. Quando algo se repete muito em tela.
+2. Quando é possível tirar algo de um componente maior sem que este componente maior pare de funcionar.
+
+# Conceito de Desestruturação

@@ -80,6 +80,13 @@
   border: none;
   color: var(--gray-400);
   border-radius: 2px;
+  line-height: 0;
+  transition: 0.1s;
+}
+
+.comments .wrapper .commentArea > header .trash:hover {
+  color: var(--red);
+  filter:drop-shadow(0 0 10px var(--red));
 }
 
 .comments .wrapper .commentArea .commentContent {
@@ -96,6 +103,12 @@
   justify-content: flex-start;
   align-items: center;
   gap: 0.625rem;
+  transition: 0.1s;
+}
+
+.comments .wrapper .applause:hover {
+  color: var(--green-300);
+  filter:drop-shadow(0 0 10px var(--green-300));
 }
 
 .comments .wrapper button {

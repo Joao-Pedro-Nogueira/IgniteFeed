@@ -1,13 +1,16 @@
 //Importação de estilização
 import styles from './Comment.module.css'
 
+//Importação de componentes
+import { Avatar } from './Avatar'
+
 //Importação de icones
 import {Trash, ThumbsUp} from 'phosphor-react'
 
 export function CommentList () {
 return (
   <section className={styles.comments}>
-        <img src="https://github.com/Joao-Pedro-Nogueira.png"/>
+        <Avatar hasBorder={false} src="https://github.com/Joao-Pedro-Nogueira.png"/>
         <div className={styles.wrapper}>
           <div className={styles.commentArea}>
             <header>
