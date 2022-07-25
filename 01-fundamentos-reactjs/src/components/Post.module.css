@@ -140,3 +140,7 @@ p a {
 .commentForm button[type="submit"]:hover {
   background-color: var(--green-300);
 }
+
+.commentList {
+  width: 100%;
+}

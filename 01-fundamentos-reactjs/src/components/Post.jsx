@@ -8,8 +8,11 @@ import { Avatar } from './Avatar'
 //Importação de funções de bibliotecas
 import { format, formatDistanceToNow } from 'date-fns'
 import ptBR from 'date-fns/locale/pt-BR'
+import { useState } from 'react'
 
 export function Post(props) {
+  const [comments, setComments] = useState([])
+
   const publishedDateFormatted = format(
     props.date,
     "dd 'de' LLLL 'às' HH'h'mm",
@@ -22,6 +25,12 @@ export function Post(props) {
     locale: ptBR,
     addSuffix: true
   })
+
+  function handleCreateNewComment() {
+    event.preventDefault()
+
+    setComments([...comments, comments.length + 1])
+  }
 
   return (
     <article className={styles.post}>
@@ -57,7 +66,7 @@ export function Post(props) {
         })}
       </div>
 
-      <form className={styles.commentForm}>
+      <form onSubmit={handleCreateNewComment} className={styles.commentForm}>
         <strong>Deixe seu feedback</strong>
 
         <textarea placeholder="Escreva um comentário"></textarea>
@@ -67,9 +76,11 @@ export function Post(props) {
         </footer>
       </form>
 
-      <CommentList />
-      <CommentList />
-      <CommentList />
+      <div className={styles.commentList}>
+        {comments.map(comment => {
+          return <CommentList />
+        })}
+      </div>
     </article>
   )
 }

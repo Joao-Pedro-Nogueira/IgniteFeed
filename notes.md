@@ -165,3 +165,7 @@ export function Post(props) {
 # Iteração
 
 Basicamente é a estrutura de repetição.
+
+# Estado (useState)
+
+O React não monitora a mudança de variáveis para ser mais performático. Portanto, quando a mudança de uma variável tiver que resultar em uma alteração em tela, é preciso utilizar o useState, que é basicamente uma funcionalidade que "avisa" o React sobre a mudança na variável, para que a mudança possa ser processada.
