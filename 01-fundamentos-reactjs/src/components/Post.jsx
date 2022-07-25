@@ -5,36 +5,65 @@ import styles from './Post.module.css'
 import { CommentList } from './Comment'
 import { Avatar } from './Avatar'
 
-export function Post () {
+//Importação de funções de bibliotecas
+import { format, formatDistanceToNow } from 'date-fns'
+import ptBR from 'date-fns/locale/pt-BR'
+
+export function Post(props) {
+  const publishedDateFormatted = format(
+    props.date,
+    "dd 'de' LLLL 'às' HH'h'mm",
+    {
+      locale: ptBR
+    }
+  )
+
+  const publishedDateRelativeToNow = formatDistanceToNow(props.date, {
+    locale: ptBR,
+    addSuffix: true
+  })
+
   return (
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <Avatar hasBorder={true} src='https://github.com/diego3g.png' />
+          <Avatar src={props.avatar} />
           <div className={styles.authorInfo}>
-            <strong>Diego Fernandes</strong>
-            <span >Rocketseat CTO</span>
+            <strong>{props.author}</strong>
+            <span>{props.role}</span>
           </div>
         </div>
 
-        <time title='Quinta feira, 20 de julho de 2022 às 21h22' dateTime='20-07-2022 21:22'>Publicado há 13h</time>
+        <time
+          title={publishedDateFormatted}
+          dateTime={props.date.toISOString()}
+        >
+          {publishedDateRelativeToNow}
+        </time>
       </header>
 
       <div className={styles.content}>
-        <p>Ninguém vai entregar mais conteúdo de qualidade em programação do que a Rocketseat </p>em 2022. Podem anotar!
-
-        <p>2021 preparamos muito o terreno para tudo o que vai acontecer em 2022, se preparem.</p>
-
-        <p><a href="#">#Rocketseat</a> <a href='#'>#ReactJS</a></p>
+        {props.content.map(line => {
+          if (line.type === 'paragraph') {
+            return <p>{line.content}</p>
+          }
+          if (line.type === 'link') {
+            return (
+              <p>
+                <a href="#">{line.content}</a>
+              </p>
+            )
+          }
+        })}
       </div>
 
       <form className={styles.commentForm}>
         <strong>Deixe seu feedback</strong>
 
-        <textarea placeholder='Escreva um comentário'></textarea>
+        <textarea placeholder="Escreva um comentário"></textarea>
 
         <footer>
-          <button type='submit'>Publicar</button>
+          <button type="submit">Publicar</button>
         </footer>
       </form>
 

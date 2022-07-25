@@ -9,7 +9,7 @@
 }
 
 .avatarWithBorder:hover {
-  filter:drop-shadow(0 0 10px var(--green-300));
+  filter:drop-shadow(0 0 7px var(--green-300));
 }
 
 .avatar {
@@ -21,5 +21,5 @@
 }
 
 .avatar:hover {
-  filter:drop-shadow(0 0 10px var(--green-300));
+  filter:drop-shadow(0 0 7px var(--green-300));
 }

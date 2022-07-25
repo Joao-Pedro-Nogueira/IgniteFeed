@@ -161,3 +161,7 @@ export function Post(props) {
 2. Quando é possível tirar algo de um componente maior sem que este componente maior pare de funcionar.
 
 # Conceito de Desestruturação
+
+# Iteração
+
+Basicamente é a estrutura de repetição.
