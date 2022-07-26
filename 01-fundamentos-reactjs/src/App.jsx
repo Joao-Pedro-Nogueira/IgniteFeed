@@ -70,6 +70,7 @@ export function App() {
           {posts.map(post => {
             return (
               <Post
+                key={post.id}
                 avatar={post.author.avatarUrl}
                 author={post.author.name}
                 role={post.author.role}

@@ -61,11 +61,11 @@ export function Post(props) {
       <div className={styles.content}>
         {props.content.map(line => {
           if (line.type === 'paragraph') {
-            return <p>{line.content}</p>
+            return <p key={line.content}>{line.content}</p>
           }
           if (line.type === 'link') {
             return (
-              <p>
+              <p key={line.content}>
                 <a href="#">{line.content}</a>
               </p>
             )
@@ -90,7 +90,7 @@ export function Post(props) {
 
       <div className={styles.commentList}>
         {comments.map(comment => {
-          return <CommentList content={comment} />
+          return <CommentList key={comment} content={comment} />
         })}
       </div>
     </article>
