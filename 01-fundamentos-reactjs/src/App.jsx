@@ -41,7 +41,7 @@ const posts = [
     author: {
       avatarUrl: 'https://github.com/Joao-Pedro-Nogueira.png',
       name: 'João Pedro Nogueira',
-      role: 'Fullstack Developer'
+      role: 'Computer Engineer'
     },
     content: [
       {

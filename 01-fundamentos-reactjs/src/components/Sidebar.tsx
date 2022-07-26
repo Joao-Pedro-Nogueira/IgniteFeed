@@ -25,7 +25,7 @@ export function Sidebar () {
         hasBorder
         src="https://github.com/Joao-Pedro-Nogueira.png" />
         <strong>João Pedro Nogueira</strong>
-        <span>Web Developer</span>
+        <span>Computer Engineer</span>
       </div>
       <footer>
         <a href="#">
