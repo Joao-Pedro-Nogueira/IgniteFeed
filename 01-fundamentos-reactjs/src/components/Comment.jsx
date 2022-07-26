@@ -7,7 +7,7 @@ import { Avatar } from './Avatar'
 //Importação de icones
 import { Trash, ThumbsUp } from 'phosphor-react'
 
-export function CommentList() {
+export function CommentList(props) {
   return (
     <section className={styles.comments}>
       <Avatar
@@ -33,7 +33,7 @@ export function CommentList() {
             </button>
           </header>
           <div className={styles.commentContent}>
-            <p>Altíssimas expectativas!! 👏👏</p>
+            <p>{props.content}</p>
           </div>
         </div>
         <button className={styles.applause}>

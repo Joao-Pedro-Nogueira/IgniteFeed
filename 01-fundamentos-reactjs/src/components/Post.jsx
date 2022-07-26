@@ -11,7 +11,9 @@ import ptBR from 'date-fns/locale/pt-BR'
 import { useState } from 'react'
 
 export function Post(props) {
-  const [comments, setComments] = useState([])
+  const [comments, setComments] = useState(['Altíssimas expectativas!!'])
+
+  const [newCommentText, setNewCommentText] = useState('')
 
   const publishedDateFormatted = format(
     props.date,
@@ -29,7 +31,12 @@ export function Post(props) {
   function handleCreateNewComment() {
     event.preventDefault()
 
-    setComments([...comments, comments.length + 1])
+    setComments([...comments, newCommentText])
+    setNewCommentText('')
+  }
+
+  function handleNewCommentChange() {
+    setNewCommentText(event.target.value)
   }
 
   return (
@@ -69,7 +76,12 @@ export function Post(props) {
       <form onSubmit={handleCreateNewComment} className={styles.commentForm}>
         <strong>Deixe seu feedback</strong>
 
-        <textarea placeholder="Escreva um comentário"></textarea>
+        <textarea
+          name="comment"
+          placeholder="Escreva um comentário"
+          value={newCommentText}
+          onChange={handleNewCommentChange}
+        ></textarea>
 
         <footer>
           <button type="submit">Publicar</button>
@@ -78,7 +90,7 @@ export function Post(props) {
 
       <div className={styles.commentList}>
         {comments.map(comment => {
-          return <CommentList />
+          return <CommentList content={comment} />
         })}
       </div>
     </article>
