@@ -120,3 +120,8 @@
   color: var(--gray-400);
   border-radius: 2px;
 }
+
+.comments .wrapper button:focus {
+  border: none;
+  outline: none;
+}
