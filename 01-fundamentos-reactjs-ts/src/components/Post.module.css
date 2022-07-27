@@ -1,0 +1,152 @@
+.post {
+  padding: 2.5rem;
+  background: var(--gray-800);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.post + .post {
+  margin-top: 2rem;
+}
+
+.post > header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post > header .author {
+  display: flex;
+  gap: 1rem;
+}
+
+.post > header .author .authorInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.post > header .author .authorInfo strong {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 160%;
+  color: var(--gray-100);
+}
+
+.post > header .author .authorInfo span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 160%;
+  color: var(--gray-400);
+}
+
+.post > header > time {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 160%;
+  color: var(--gray-400);
+}
+
+.post .content {
+  width: 100%;
+  line-height: 160%;
+  color: var(--gray-300);
+  margin-top: 1.5rem;
+}
+
+.post .content p + p {
+  margin-top: 1rem;
+}
+
+p a {
+  font-weight: bold;
+  color: var(--green-500);
+  text-decoration: none;
+}
+
+.post .content p a:hover {
+  color: var(--green-300);
+}
+
+.commentForm {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--gray-600);
+}
+
+.commentForm > strong {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 160%;
+  color: var(--gray-100);
+}
+
+.commentForm textarea {
+  width: 100%;
+  background: var(--gray-900);
+  border: 0;
+  resize: none;
+  height: 6rem;
+  width: 47rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 140%;
+  padding: 1rem;
+  color: var(--white);
+}
+
+.commentForm footer {
+  visibility: hidden;
+  max-height: 0;
+}
+
+.commentForm:focus-within footer {
+  visibility: visible;
+  max-height: none;
+}
+
+.commentForm button[type="submit"] {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 19px;
+  color: var(--white);
+  
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  
+  background: var(--green-500);
+}
+
+.commentForm button[type="submit"]:not(:disabled):hover {
+  background-color: var(--green-300);
+  cursor: pointer;
+}
+
+.commentForm button[type="submit"]:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.commentList {
+  width: 100%;
+}
